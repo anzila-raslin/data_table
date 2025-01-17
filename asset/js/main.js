@@ -2,7 +2,7 @@ $(document).ready(() => {
     let table = $('#myTable').DataTable();
 
     // Fetch data 
-    $.get('../asset/js/MOCK_DATA.json', function (res, status, xhr) {
+    $.get('./asset/js/MOCK_DATA.json', function (res, status, xhr) {
         if (status === 'success') {
             res.forEach((item) => {
                 table.row.add([
